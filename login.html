@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body{
+            
+            background-image:url(./bg0.jpg);
+            min-height: 100vh;
+            background-size: cover;
+        }
+        .form-container{
+            text-align: center;
+            padding: 1.6% 10px;
+            font-family: sans-serif;
+        }
+        .form-field input{
+            border-radius: 25px;
+            width: 20%;
+            padding: 13px;
+            text-align: center;
+        }
+        .form-field button{
+            border-radius: 13.5px;
+            width: 12.5%;
+            padding: 13px;
+        }
+    </style>
 </head>
 <body>
-    <form action="./biodata.html">
-    <center>
-        <h1>Login</h1>
-
-    <p>Enter your email: <input type="email"></p>
-
-    <p>Enter your password: <input type="password"></p>
+    <form action="./biodata.html" class="form-container">
     
-    <a href="./forget_pass.html">Forgot password </a>
+    <div class="form-field"><h1>Login Here!!!!</h1></div>
 
-    <p><button>Login</button></p>
-    </center>
+    <div class="form-field"><input type="email" placeholder="Enter your Email"><br/><br/>
+
+    <input type="password" placeholder="Enter password"></div><br/>
+    
+    <div class="form-field"><a href="./forget_pass.html">Forgot password </a></div><br/>
+
+    <div class="form-field"><button>Login</button></div>
+    
     </form>
 </body>
 </html>

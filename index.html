@@ -4,36 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <style>
+        body {
+           margin: 0px;
+           background-image: url('./bg1.jpg');
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           font-family: sans-serif;
+        }
+       .parent{
+        position:fixed;
+        top: 0px;
+        z-index: -2;
+       }
+       .field-container{
+        text-align: center;
+        font-family: sans-serif;
+       }
+       .field-class h1{
+        color: rgb(6, 74, 97);
+       }
+       .field-class{
+        margin: 20px 0px;
+       }
+       .field-classes input{
+        border-radius: 25px;
+        width: 20%;
+        padding: 13px;
+        
+       }
+       .field-classes input::placeholder{
+            text-align: center;
+        }
+        .field-class button{
+            border: 1px solid white;
+            color:rgb(6, 75, 98);
+            background-color:white;
+            padding: 10px;
+            width: 11.5%;
+            border-radius: 13px;
+        }
+    </style>
 </head>
 <body>
-    <form action="./login.html">
-    <center>
-        <h1>Register</h1>
-    <p>Enter your Name: <input type="text" placeholder="Enter your Name" required></p>
-
-    <p>Enter your email: <input type="email" placeholder="Enter your email" required></p>
-
-    <p>Enter your password: <input type="password"  placeholder="Enter your password"  required></p>
-
-    <p>Confirm password: <input type="password" placeholder="Confirm password"></p>
-
-    <p>Mobile number: <input type="number" placeholder="Mobile number"></p>
+    <form action="./login.html" class="field-container">
+    <div class="field-class">
+        <h1>Register Here!!!</h1>
+    </div>
+    <div class="field-classes">
+    <input type="text" placeholder="Enter your Name"> <br/><br/>
+    <input type="email" placeholder="Enter your email" required> <br/><br/>
+    <input type="password"  placeholder="Enter your password" > <br/><br/>
+    <input type="password" placeholder="Confirm password"> <br/><br/>
+    <input type="text" placeholder="Mobile number"></div>
     
-    <p>Gender: <input type="radio" id="gmale" name="Gender">
+    <div class="field-class">Gender: <input type="radio" id="gmale" name="Gender">
         <label for="gmale">Male</label>
     <input type="radio" id="gfemale" name="Gender">
         <label for="gfemale">Female</label>
-    </p>
+    </div>
 
-    <p>Educational Qualification: 
-    <input type="checkbox">10th
-    <input type="checkbox">Intermediate
-    <input type="checkbox">Diploma
+    <div class="field-class">Educational Qualification: 
+    <input type="checkbox">10th 
+    <input type="checkbox">Intermediate 
+    <input type="checkbox">Diploma 
     <input type="checkbox">B.Tech 
-    <input type="checkbox">Degree
-    <input type="checkbox">MBA  </p>
+    <input type="checkbox">Degree 
+    <input type="checkbox">MBA  </div>
 
-    <p>City: 
+    <div class="field-class">City: 
         <select>
         <option value="">Select your city</option>
         <option value="">Vijayawada</option>
@@ -43,13 +84,11 @@
         <option value="">Vizag</option>
         <option value="">Chennai</option>
         </select>
-    </p>
+    </div>
 
-    <p>Address: <textarea name="" placeholder="Enter your address"></textarea></p>
-
-    <p>Upload photo: <input type="file"></p>
-    <p><button>Register</button></p>
-    </center>
+    <div class="field-class">Upload photo: <input type="file"> <br/><br/><br/>
+    <button>Register</button></div>
+    
     </form>
 </body>
 </html>
